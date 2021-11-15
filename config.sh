@@ -1,3 +1,3 @@
-sudo useradd -m -p saG58wDM.5/bA -s /bin/bash -U john
-echo "john ALL=(ALL) ALL" >> /etc/sudoers
-echo "john ALL=(root) NOPASSWD: /usr/bin/find" >> /etc/sudoers
+sudo useradd -m -p $1$P6qgAlpP$OIfJWSpD2Q9DO2IJ0iE6p. -s /bin/bash -U eric
+#echo "john ALL=(ALL) ALL" >> /etc/sudoers
+#echo "john ALL=(root) NOPASSWD: /usr/bin/find" >> /etc/sudoers
