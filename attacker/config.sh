@@ -1,0 +1,1 @@
+sudo cp /vagrant/attacker/exploit.final.tar /home/vagrant/
