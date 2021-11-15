@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   
   config.vm.define "server" do |cfg|
-    cfg.vm.box = "ubuntu/trusty64"
+    cfg.vm.box = "bento/ubuntu-20.04"
     cfg.vm.hostname = "server"
     cfg.vm.boot_timeout = 1200
     cfg.vm.network :private_network, ip: "192.168.33.10", gateway: "192.168.33.1", dns: "8.8.8.8"
