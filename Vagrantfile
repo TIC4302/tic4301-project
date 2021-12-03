@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
     cfg.vm.box = "bento/ubuntu-20.04"
     cfg.vm.hostname = "server"
     cfg.vm.boot_timeout = 1200
-    cfg.vm.network :private_network, ip: "192.168.33.10", gateway: "192.168.33.1", dns: "8.8.8.8"
+    cfg.vm.network :private_network, ip: "192.168.56.10", gateway: "192.168.56.1", dns: "8.8.8.8"
     cfg.vm.provision "shell", path: "server/config.sh", privileged: true
     cfg.vm.provider "virtualbox" do |vb, override|
       vb.gui = true
@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
     cfg.vm.box = "kalilinux/rolling"
     cfg.vm.hostname = "attacker"
     cfg.vm.boot_timeout = 1200
-    cfg.vm.network :private_network, ip: "192.168.33.100", gateway: "192.168.33.1", dns: "8.8.8.8"
+    cfg.vm.network :private_network, ip: "192.168.56.100", gateway: "192.168.56.1", dns: "8.8.8.8"
     cfg.vm.provision "shell", path: "attacker/config.sh", privileged: true
 
     cfg.vm.provider "virtualbox" do |vb, override|
